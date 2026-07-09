@@ -69,7 +69,9 @@ Todo o conteúdo fica em [`src/data/`](src/data), separado da UI:
   - `whereInErp` (opcional) — onde o conceito costuma aparecer no sistema
   - `relatedRecords` (opcional) — códigos de registros do SPED relacionados
     (viram links clicáveis quando existe um termo com o mesmo `id`)
+  - `example` (opcional) — exemplo prático exibido no painel de detalhe
   - `commonErrors` (opcional) — lista de erros comuns
+  - `keywords` (opcional) — sinônimos/termos extras usados apenas pela busca
 
 Para adicionar um termo, basta acrescentar um novo objeto em `terms.ts` — ele
 aparece automaticamente na busca, no card de categoria e na contagem, sem
