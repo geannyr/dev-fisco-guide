@@ -71,8 +71,8 @@ function App() {
         ) : (
           <>
             <Hero />
-            <section className="mx-auto max-w-[1440px] px-4 pb-10 sm:px-6 xl:grid xl:grid-cols-[280px_1fr] xl:items-start xl:gap-10">
-              <aside className="mb-8 xl:sticky xl:top-20 xl:mb-0">
+            <section className="mx-auto max-w-[1440px] px-4 pb-16 sm:px-6 xl:grid xl:grid-cols-[280px_1fr] xl:items-start xl:gap-10">
+              <aside className="mb-8 xl:sticky xl:top-24 xl:mb-0 xl:rounded-2xl xl:border xl:border-slate-200 xl:bg-white xl:p-4 xl:shadow-sm xl:dark:border-slate-800 xl:dark:bg-slate-900">
                 <h2 className="mb-3 text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
                   Categorias
                 </h2>

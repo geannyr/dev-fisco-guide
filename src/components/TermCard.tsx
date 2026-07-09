@@ -11,10 +11,10 @@ export function TermCard({ term, category, onSelect }: Props) {
     <button
       type="button"
       onClick={() => onSelect(term.id)}
-      className="group flex flex-col rounded-xl border border-slate-200 bg-white p-4 text-left transition hover:-translate-y-0.5 hover:border-blue-800/40 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-400/40"
+      className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-blue-800/40 hover:shadow-md sm:p-5 dark:border-slate-800 dark:bg-slate-900 dark:shadow-none dark:hover:border-blue-400/40"
     >
       <div className="flex items-start justify-between gap-2">
-        <h3 className="text-sm font-semibold text-slate-900 group-hover:text-blue-900 dark:text-slate-100 dark:group-hover:text-blue-300">
+        <h3 className="line-clamp-2 text-sm font-semibold text-slate-900 group-hover:text-blue-900 dark:text-slate-100 dark:group-hover:text-blue-300">
           {term.name}
         </h3>
         {category && (
@@ -23,7 +23,7 @@ export function TermCard({ term, category, onSelect }: Props) {
           </span>
         )}
       </div>
-      <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+      <p className="mt-2 line-clamp-3 flex-1 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
         {term.short}
       </p>
     </button>
